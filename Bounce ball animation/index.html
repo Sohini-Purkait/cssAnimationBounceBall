@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bounce ball</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(172, 37, 37);
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: animateX 5s linear infinite ,
+                   animateY 1s ease-out infinite alternate;
+    }
+
+    .box p{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container{
+        position: relative;
+        background-color: rgb(98, 209, 98);
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    @keyframes animateX{
+        from{
+            left: 0;
+        }
+        to{
+            left: 90%;
+        }
+    }
+    @keyframes animateY{
+        from{
+            bottom: 0;
+        }
+        to{
+            bottom: 80%;
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Sohini's Ball😍</p>
+        </div>
+    </div>
+</body>
+</html>
